@@ -1,0 +1,179 @@
+.name{
+  color:white;
+  text-align:center;
+  margin: 0px;
+  padding-top: 10px;
+}
+.landingPageScore{
+  display: none;
+}
+.playerNameAndScore{
+  color:white;
+  float: left;
+  display: inline;
+  margin-left: 10px
+}
+#score{
+  float: right;
+  margin: 5px 10px;
+  border: 1px solid black;
+  padding: 3px;
+}
+#board{
+  position: relative;
+  top: 50px;
+  left: 30%;
+  width:500px;
+  height:600px;
+  border: 1px black solid;
+  background-color: black;
+  opacity: 0.8;
+}
+.Page{
+
+  position: relative;
+  top:52px;
+  left:0px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+}
+#land{
+  background-image: url('../images/brick.jpg');
+}
+.closeLandPage{
+  animation: closePage 2s forwards 1;
+}
+@keyframes closePage {
+  from{ border-radius: 10%; width: 450px; height: 450px;}
+  /*12.5%{justify-content: center;transform: translate(25px,25px) rotate(15deg) ;border-radius: 15%; width: 400px; height: 400px;}*/
+  /*25%{justify-content: center;transform: translate(50px,50px) rotate(25deg);border-radius: 20%; width: 350px; height: 350px;}*/
+  /*50%{justify-content: center;transform: translate(75px,75px) rotate(30deg);border-radius: 30%; width: 300px; height: 300px;}*/
+  /*62.5%{justify-content: center;transform: translate(100px,100px) rotate(40deg);border-radius: 35%; width: 250px; height: 250px;}*/
+  /*75%{justify-content: center;transform: translate(125px,125px) rotate(60deg);border-radius: 40%; width: 200px; height: 200px;}*/
+  /*87.5%{justify-content: center;transform: translate(150px,150px) rotate(75deg);border-radius: 50%; width: 150px; height: 150px;}*/
+  100%{justify-content: center;transform: translate(250px,250px) rotate(90deg);border-radius: 50%; width: 0px; height: 0px; display: none;}
+
+}
+.playerName{
+  position:relative;
+  top:150px;
+  left:125px;
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+  text-align: center;
+}
+.button{
+  position: relative;
+  top: 250px;
+  left:125px;
+  width: 250px;
+  height: 50px;
+  font-size: 30px;
+}
+#gamePage{
+  background-image: url('../images/empireState.jpg');
+  background-repeat: no-repeat;
+  /*background-size:*/
+  height: 540px;
+  top:60px;
+  animation: displayGame 1s;
+}
+@keyframes displayGame {
+  from{transform: translate(0, 547px);height: 0px; width: 500px;}
+  to{height: 547px;}
+}
+#winPage{
+  background-image: url('../images/last.png');
+  top:80px;
+  height: 520px;
+}
+.top5{
+  position:absolute;
+  top: 385px;
+  left:50px;
+  width:400px;
+  height: 100px;
+  border: 1px solid black;
+}
+.block{
+  border: 1px solid black;
+  position:absolute;
+  bottom:1;
+  right:0;
+  width:100px;
+  height: 30px;
+  background-color:black;
+  opacity: 0.5
+}
+/*
+this id's are for size of each piece to build the tower
+*/
+#blockPice16{
+  width:6px;
+  height: 55px;
+}
+#blockPice15{
+  width:16px;
+}
+#blockPice14{
+  width:20px;
+}
+#blockPice13{
+  width:35px;
+}
+#blockPice12{
+  width:83px;
+}
+#blockPice11{
+  width:106px;
+}
+#blockPice10{
+  width:106px;
+}
+#blockPice9{
+  width:106px;
+}
+#blockPice8{
+  width:106px;
+}
+#blockPice7{
+  width:106px;
+}
+#blockPice6{
+  width:106px;
+}
+#blockPice5{
+  width:106px;
+}
+#blockPice4{
+  width:106px;
+}
+#blockPice3{
+  width:106px;
+}
+#blockPice2{
+  width:131px;
+}
+#blockPice1{
+  width:171px;
+}
+#blockPice0{
+  width:171px;
+}
+.blockMove{
+  animation: moveBlock 2s forwards 30;
+}
+@keyframes moveBlock {
+  to from{right:0px;}
+  from {right: 400px;}
+}
+.blockStop{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width:100px;
+  height: 30px;
+  background-color:black;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "project1-game",
+  "version": "1.0.0",
+  "description": "one player game, build blocks up to the top",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.generalassemb.ly/Jovan5/Jovan-Georgievski-project1.git"
+  },
+  "keywords": [
+    "game",
+    "wdi"
+  ],
+  "author": "Jovan Georgievski",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  }
+}
